@@ -1,95 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/public/build/tailwind.css" />
+    <title>The Creative Crew</title>
   </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+  <body class="">
+    <div class="flex justify-around mt-12">
+      <!-- Company Name -->
+      <p style="font-family: 'PT Serif'" class="text-4xl font-bold">
+        The creative crew
+      </p>
+      <!-- Description -->
+      <div class="max-w-md">
+        <small
+          style="font-family: 'Poppins'"
+          class="text-lg font-semibold uppercase"
+          >Who we are</small
+        >
+        <p style="font-family: 'Poppins'" class="text-lg font-normal">
+          We are a team of creatively diverse, driven, innovative individuals
+          working in various locations around the world.
         </p>
       </div>
+    </div>
+    <!-- the team -->
+    <div class="container grid grid-cols-5 grid-rows-2">
+      <!-- First Group -->
+      <!-- <div class=""> -->
+      <!-- bill -->
+      <div class="w-56 col-start-2 row-start-1">
+        <img src="/public/assets/img/photo1.png" alt="Bill Mahoney" />
+        <p>Bill Mahoney</p>
+        <span>Product Owner</span>
+      </div>
+      <!-- saba -->
+      <div class="w-56 col-start-3 row-start-1">
+        <img src="/public/assets/img/photo2.png" alt="Saba Cabrera" />
+        <p>Saba Cabrera</p>
+        <span>Art Director</span>
+      </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <!-- shae -->
+      <div class="w-56 col-start-4 row-start-1">
+        <img src="/public/assets/img/photo3.png" alt="Shae Le" />
+        <p>Shae Le</p>
+        <span>Tech Lead</span>
+      </div>
+      <!-- </div> -->
+
+      <!-- Second Group -->
+      <!-- <div class=""> -->
+      <!-- skylah -->
+      <div class="w-56 col-start-2 row-start-2">
+        <img src="/public/assets/img/photo4.png" alt="Skylah Lu" />
+        <p>Skylah Lu</p>
+        <span>UX Designer</span>
+      </div>
+
+      <!-- griff -->
+      <div class="w-56 col-start-3 row-start-2">
+        <img src="/public/assets/img/photo5.png" alt="Griff Richards" />
+        <p>Griff Richards</p>
+        <span>Developer</span>
+      </div>
+
+      <!-- stan -->
+      <div class="w-56 col-start-4 row-start-2">
+        <img src="/public/assets/img/photo6.png" alt="Stan John" />
+        <p>Stan John</p>
+        <span>Developer</span>
+      </div>
+      <!-- </div> -->
     </div>
   </body>
 </html>
